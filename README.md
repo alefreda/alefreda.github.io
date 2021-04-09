@@ -1,2 +1,0 @@
-# Alessandro Freda
-Personal website
