@@ -1,9 +1,6 @@
-html, body {
-	overflow: hidden
-}
-
-body {
+.section-1 {
 	background-color: #0e1212;
+	color: #dbdbdb;
 	height: 100%;
 	min-height: 100%;
 	margin: 0;
@@ -11,8 +8,7 @@ body {
 	outline: 0
 }
 
-.light,
-body {
+.light {
 	color: #dbdbdb
 }
 
@@ -44,12 +40,15 @@ body {
 	margin-left: 2.75vh
 }
 
-.footer {
-	position: absolute;
-	bottom: 1.25vh;
-	text-align: center
-}
+.card:hover {
+	transform: scale(1.02);
+	box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+  }
 
+.page-item.active .page-link {
+	background-color: rgb(72, 86, 88);
+	border-color: rgb(72, 86, 88);
+}
 
 /*!
  * Hover.css (http://ianlunn.github.io/Hover/)
@@ -60,7 +59,7 @@ body {
  * Hover.css Copyright Ian Lunn 2017. Generated with Sass.
  */
 
- .hvr-grow {
+.hvr-grow {
 	display: inline-block;
 	vertical-align: middle;
 	-webkit-transform: perspective(1px) translateZ(0);
@@ -71,13 +70,15 @@ body {
 	-webkit-transition-property: transform;
 	transition-property: transform;
   }
+
   .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
   }
 
 
-  /* Icon Grow Rotate */
+/* Icon Grow Rotate */
+
 .hvr-icon-grow-rotate {
 	display: inline-block;
 	vertical-align: middle;
@@ -87,6 +88,7 @@ body {
 	-webkit-transition-duration: 0.3s;
 	transition-duration: 0.3s;
   }
+
   .hvr-icon-grow-rotate .hvr-icon {
 	-webkit-transform: translateZ(0);
 	transform: translateZ(0);
@@ -97,6 +99,7 @@ body {
 	-webkit-transition-timing-function: ease-out;
 	transition-timing-function: ease-out;
   }
+
   .hvr-icon-grow-rotate:hover .hvr-icon, .hvr-icon-grow-rotate:focus .hvr-icon, .hvr-icon-grow-rotate:active .hvr-icon {
 	-webkit-transform: scale(1.5) rotate(12deg);
 	transform: scale(1.5) rotate(12deg);
