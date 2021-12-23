@@ -11,7 +11,7 @@ var typewriter = new Typewriter(text_type_writer, {
 });
 
 typewriter
-  .pauseFor(1000)
+  .pauseFor(800)
   .typeString('Software engineer')
   .pauseFor(300)
   .deleteChars(17)
